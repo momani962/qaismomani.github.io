@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Qais Momani - Robotics and Mechatronics Engineering Portfolio">
+
+  <meta name="description"
+        content="Qais Momani - Robotics and Mechatronics Engineering Portfolio">
+
   <title>Qais Momani | Robotics Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,7 +16,8 @@
 
   <!-- NAVIGATION -->
   <header class="site-header">
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
+
       <a class="brand" href="#home">Qais Momani</a>
 
       <div class="nav-links">
@@ -23,6 +27,7 @@
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </div>
+
     </nav>
   </header>
 
@@ -30,34 +35,60 @@
 
     <!-- HOME -->
     <section id="home" class="hero">
-      <p class="eyebrow">ROBOTICS & MECHATRONICS ENGINEERING</p>
 
-      <h1>Developing robotic systems for real-world challenges.</h1>
+      <div class="hero-content">
 
-      <p class="hero-description">
-        First-year CDT researcher in Robotics and AI for Net Zero
-        at the University of Manchester, with interests in
-        autonomous robotics, inspection and systems engineering.
-      </p>
+        <p class="eyebrow">
+          ROBOTICS & MECHATRONICS ENGINEERING
+        </p>
 
-      <div class="hero-links">
-        <a href="#projects" class="button primary">
-          Explore Projects
-        </a>
+        <h1>
+          Developing robotic systems for real-world challenges.
+        </h1>
 
-        <a href="QMCV.pdf" class="button secondary"
-           target="_blank" rel="noopener noreferrer">
-          View CV
-        </a>
+        <p class="hero-description">
+          First-year CDT researcher in Robotics and AI for Net Zero
+          at the University of Manchester, with interests in
+          autonomous robotics, inspection and systems engineering.
+        </p>
+
+        <div class="hero-links">
+
+          <a href="#projects" class="button primary">
+            Explore Projects
+          </a>
+
+          <a href="QMCV.pdf"
+             class="button secondary"
+             target="_blank"
+             rel="noopener noreferrer">
+            View CV
+          </a>
+
+        </div>
+
       </div>
+
+      <!-- PERSONAL PHOTOGRAPH -->
+      <div class="hero-photo">
+        <img
+          src="images/personal.png"
+          alt="Portrait photograph of Qais Momani"
+          width="400"
+          height="500"
+        >
+      </div>
+
     </section>
+
 
     <!-- ABOUT -->
     <section id="about" class="section">
-      <p class="section-label">INTRODUCTION</p>
+
       <h2>About Me</h2>
 
       <div class="text-content">
+
         <p>
           I am a first-year CDT student in Robotics and AI for
           Net Zero at the University of Manchester, currently
@@ -81,15 +112,19 @@
           contributing towards safer and more effective inspection
           and maintenance in challenging environments.
         </p>
+
       </div>
+
     </section>
+
 
     <!-- RESEARCH INTERESTS -->
     <section id="interests" class="section">
-      <p class="section-label">RESEARCH DIRECTION</p>
+
       <h2>Research Interests & Career Objectives</h2>
 
       <div class="interests-content">
+
         <ul class="interests-list">
 
           <li>
@@ -124,23 +159,27 @@
         <p>
           My ambition is to undertake PhD research in robotic
           inspection and contribute to the development of robotic
-          platforms for industrial and government-related
-          applications, particularly within the nuclear sector.
+          platforms for industrial and government related
+          applications, particularly within the nuclear and renewable energy sector.
           I am also interested in pursuing further academic
           research and teaching later in my career.
         </p>
+
       </div>
+
     </section>
+
 
     <!-- SKILLS -->
     <section id="skills" class="section">
-      <p class="section-label">TECHNICAL CAPABILITIES</p>
+
       <h2>Technical Skills</h2>
 
       <div class="skills-grid">
 
         <div class="skill-card">
           <h3>Programming & Software</h3>
+
           <ul>
             <li>Python, C and C++</li>
             <li>MATLAB and Simulink</li>
@@ -151,6 +190,7 @@
 
         <div class="skill-card">
           <h3>Robotics & Control</h3>
+
           <ul>
             <li>ROS 2 and MoveIt 2</li>
             <li>Robot kinematics and dynamics</li>
@@ -161,6 +201,7 @@
 
         <div class="skill-card">
           <h3>Mechanical & Electronic Design</h3>
+
           <ul>
             <li>SolidWorks and CAD modelling</li>
             <li>PCB design using Altium and KiCad</li>
@@ -171,6 +212,7 @@
 
         <div class="skill-card">
           <h3>Perception & Data Analysis</h3>
+
           <ul>
             <li>Computer vision and image processing</li>
             <li>Machine learning</li>
@@ -180,31 +222,46 @@
         </div>
 
       </div>
+
     </section>
+
 
     <!-- PROJECTS -->
     <section id="projects" class="section">
-      <p class="section-label">SELECTED WORK</p>
+
       <h2>Engineering Projects</h2>
 
       <p class="section-intro">
         A selection of academic, research and team projects
         demonstrating my experience in robotics, mechatronics,
         computational modelling and experimental engineering.
+        Click on any project image to view it in full.
       </p>
 
       <div class="project-grid">
 
+
         <!-- SAPLING -->
         <article class="project-card">
-          <img
-            src="images/SAPLING.png"
-            alt="Annotated SAPLiNG autonomous litter-picking robot"
-            loading="lazy"
-          >
+
+          <a href="images/SAPLING.png"
+             class="project-image-link"
+             aria-label="Enlarge SAPLiNG project image">
+
+            <img
+              src="images/SAPLING.png"
+              alt="Annotated SAPLiNG autonomous litter-picking robot"
+              loading="lazy"
+            >
+
+            <span class="image-hint">Click to enlarge</span>
+          </a>
 
           <div class="project-body">
-            <h3>SAPLiNG — Autonomous Litter-Picking Robot</h3>
+
+            <h3>
+              SAPLiNG — Autonomous Litter-Picking Robot
+            </h3>
 
             <p>
               Developed an autonomous litter retrieval system as
@@ -217,27 +274,32 @@
 
             <p class="project-tech">
               <strong>Technologies:</strong>
-              ROS 2, MoveIt 2, Python, C++, Robotic Manipulation
+              ROS 2, MoveIt 2, Python, C++,
+              Robotic Manipulation
             </p>
 
-            <div class="project-links">
-              <!-- Add your GitHub and demo URLs here when ready -->
-              <span class="coming-soon">
-                Project links to be added
-              </span>
-            </div>
           </div>
         </article>
 
+
         <!-- ESP -->
         <article class="project-card">
-          <img
-            src="images/ESP.jpg"
-            alt="Completed embedded systems line-following buggy"
-            loading="lazy"
-          >
+
+          <a href="images/ESP.jpg"
+             class="project-image-link"
+             aria-label="Enlarge ESP project image">
+
+            <img
+              src="images/ESP.jpg"
+              alt="Completed embedded systems line-following buggy"
+              loading="lazy"
+            >
+
+            <span class="image-hint">Click to enlarge</span>
+          </a>
 
           <div class="project-body">
+
             <h3>ESP — Embedded Systems Buggy</h3>
 
             <p>
@@ -251,27 +313,32 @@
 
             <p class="project-tech">
               <strong>Technologies:</strong>
-              SolidWorks, Embedded Systems, Motor Characterisation,
-              PID Control
+              SolidWorks, Embedded Systems,
+              Motor Characterisation, PID Control
             </p>
 
-            <div class="project-links">
-              <span class="coming-soon">
-                Project links to be added
-              </span>
-            </div>
           </div>
         </article>
 
+
         <!-- ARIA -->
         <article class="project-card">
-          <img
-            src="images/ARIA.jpg"
-            alt="MRI imagery and computational ARIA lesion modelling"
-            loading="lazy"
-          >
+
+          <a href="images/ARIA.jpg"
+             class="project-image-link"
+             aria-label="Enlarge ARIA project image">
+
+            <img
+              src="images/ARIA.jpg"
+              alt="MRI imagery and computational ARIA lesion modelling"
+              loading="lazy"
+            >
+
+            <span class="image-hint">Click to enlarge</span>
+          </a>
 
           <div class="project-body">
+
             <h3>ARIA — Medical Imaging Modelling</h3>
 
             <p>
@@ -286,27 +353,32 @@
 
             <p class="project-tech">
               <strong>Technologies:</strong>
-              MATLAB, Image Processing, Computational Modelling,
-              Medical Imaging
+              MATLAB, Image Processing,
+              Computational Modelling, Medical Imaging
             </p>
 
-            <div class="project-links">
-              <span class="coming-soon">
-                Dissertation and source code to be added
-              </span>
-            </div>
           </div>
         </article>
 
+
         <!-- NANOPORE -->
         <article class="project-card">
-          <img
-            src="images/Nanopore.jpg"
-            alt="Nanopore research setup and MATLAB measurement interface"
-            loading="lazy"
-          >
+
+          <a href="images/Nanopore.jpg"
+             class="project-image-link"
+             aria-label="Enlarge Nanopore project image">
+
+            <img
+              src="images/Nanopore.jpg"
+              alt="Nanopore research setup and MATLAB measurement interface"
+              loading="lazy"
+            >
+
+            <span class="image-hint">Click to enlarge</span>
+          </a>
 
           <div class="project-body">
+
             <h3>Nanopore Research — Measurement GUI</h3>
 
             <p>
@@ -324,23 +396,28 @@
               Data Acquisition
             </p>
 
-            <div class="project-links">
-              <span class="coming-soon">
-                Technical report to be added
-              </span>
-            </div>
           </div>
         </article>
 
+
         <!-- MNIST -->
         <article class="project-card">
-          <img
-            src="images/MNIST.png"
-            alt="Machine learning results for MNIST digit recognition"
-            loading="lazy"
-          >
+
+          <a href="images/MNIST.png"
+             class="project-image-link"
+             aria-label="Enlarge MNIST project image">
+
+            <img
+              src="images/MNIST.png"
+              alt="Machine learning results for MNIST digit recognition"
+              loading="lazy"
+            >
+
+            <span class="image-hint">Click to enlarge</span>
+          </a>
 
           <div class="project-body">
+
             <h3>MNIST — Handwritten Digit Recognition</h3>
 
             <p>
@@ -357,24 +434,31 @@
               Data Visualisation
             </p>
 
-            <div class="project-links">
-              <span class="coming-soon">
-                Report and source code to be added
-              </span>
-            </div>
           </div>
         </article>
 
+
         <!-- SENSORS -->
         <article class="project-card">
-          <img
-            src="images/Sensors.png"
-            alt="C-Meter Pro portable capacitance metre project poster"
-            loading="lazy"
-          >
+
+          <a href="images/Sensors.png"
+             class="project-image-link"
+             aria-label="Enlarge C-Meter Pro project image">
+
+            <img
+              src="images/Sensors.png"
+              alt="C-Meter Pro portable capacitance metre project poster"
+              loading="lazy"
+            >
+
+            <span class="image-hint">Click to enlarge</span>
+          </a>
 
           <div class="project-body">
-            <h3>C-Meter Pro — Portable Capacitance Metre</h3>
+
+            <h3>
+              C-Meter Pro — Portable Capacitance Metre
+            </h3>
 
             <p>
               Designed a low-cost, portable capacitance metre for
@@ -382,7 +466,8 @@
               concept using a microcontroller-based charge/discharge
               circuit, with embedded calibration to minimise
               measurement errors caused by stray capacitance.
-              The proposed device targeted a measurement resolution
+              The proposed battery-powered device incorporated
+              an LCD interface and targeted a measurement resolution
               of 1 pF, accuracy of ±1%, and a production cost
               below £75.
             </p>
@@ -393,20 +478,17 @@
               Instrumentation, Sensors
             </p>
 
-            <div class="project-links">
-              <span class="coming-soon">
-                Project report and poster to be added
-              </span>
-            </div>
           </div>
         </article>
+
 
       </div>
     </section>
 
+
     <!-- CONTACT -->
     <section id="contact" class="section contact-section">
-      <p class="section-label">GET IN TOUCH</p>
+
       <h2>Contact & Professional Links</h2>
 
       <p>
@@ -417,38 +499,113 @@
 
       <div class="contact-links">
 
-        <a
-          href="https://github.com/momani962"
-          target="_blank"
-          rel="noopener noreferrer">
+        <a href="https://github.com/momani962"
+           target="_blank"
+           rel="noopener noreferrer">
           GitHub
         </a>
 
-        <!-- Replace with your verified LinkedIn profile URL -->
-        <a
-          href="https://www.linkedin.com"
-          target="_blank"
-          rel="noopener noreferrer">
+        <!-- Replace with your existing working LinkedIn URL -->
+        <a href="https://www.linkedin.com/in/qais-momani-097445297"
+           target="_blank"
+           rel="noopener noreferrer">
           LinkedIn
         </a>
 
-        <a
-          href="QMCV.pdf"
-          target="_blank"
-          rel="noopener noreferrer">
+        <a href="QMCV.pdf"
+           target="_blank"
+           rel="noopener noreferrer">
           Download CV
         </a>
 
       </div>
+
     </section>
 
   </main>
 
+
+  <!-- FOOTER -->
   <footer>
     <p>
       © 2026 Qais Momani · Robotics & Mechatronics Engineering
     </p>
   </footer>
+
+
+  <!-- IMAGE LIGHTBOX -->
+  <div id="image-lightbox"
+       class="lightbox"
+       role="dialog"
+       aria-modal="true"
+       aria-label="Full-size project image"
+       hidden>
+
+    <button type="button"
+            class="lightbox-close"
+            aria-label="Close image viewer">
+      &times;
+    </button>
+
+    <img id="lightbox-image" alt="">
+
+  </div>
+
+
+  <!-- LIGHTBOX JAVASCRIPT -->
+  <script>
+    const lightbox = document.getElementById("image-lightbox");
+    const lightboxImage = document.getElementById("lightbox-image");
+    const closeButton = document.querySelector(".lightbox-close");
+    const imageLinks = document.querySelectorAll(".project-image-link");
+
+    let previousFocus = null;
+
+    function closeLightbox() {
+      lightbox.hidden = true;
+      lightboxImage.removeAttribute("src");
+      document.body.style.overflow = "";
+
+      if (previousFocus) {
+        previousFocus.focus();
+      }
+    }
+
+    imageLinks.forEach(link => {
+      link.addEventListener("click", event => {
+        event.preventDefault();
+
+        const image = link.querySelector("img");
+
+        previousFocus = document.activeElement;
+        lightboxImage.src = link.href;
+        lightboxImage.alt = image.alt;
+
+        lightbox.hidden = false;
+        document.body.style.overflow = "hidden";
+        closeButton.focus();
+      });
+    });
+
+    closeButton.addEventListener("click", closeLightbox);
+
+    lightbox.addEventListener("click", event => {
+      if (event.target === lightbox) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape" && !lightbox.hidden) {
+        closeLightbox();
+      }
+
+      if (event.key === "Tab" && !lightbox.hidden) {
+        event.preventDefault();
+        closeButton.focus();
+      }
+    });
+  </script>
 
 </body>
 </html>
