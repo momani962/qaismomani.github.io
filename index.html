@@ -4,15 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Robotics Portfolio</title>
+  <meta name="description" content="Robotics and mechatronics engineering portfolio">
+  <title>Qais Momani | Robotics Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-    <nav>
-      <strong>Robotics Portfolio</strong>
-      <div>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="#home">Qais Momani</a>
+      <div class="nav-links">
         <a href="#about">About</a>
+        <a href="#interests">Interests</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
@@ -21,68 +26,366 @@
   </header>
 
   <main>
-    <section class="hero" id="about">
-      <p class="eyebrow">ROBOTICS & MECHATRONICS</p>
-      <h1>Hi, I'm [Your Name]</h1>
-      <p>
-        MSc Robotics student interested in intelligent
-        robotic systems, inspection and challenging environments.
+
+    <!-- Introduction -->
+    <section id="home" class="hero">
+      <p class="eyebrow">ROBOTICS & MECHATRONICS ENGINEERING</p>
+      <h1>Developing robotic systems for real-world challenges.</h1>
+      <p class="hero-description">
+        First-year CDT researcher in Robotics and AI for Net Zero
+        at the University of Manchester, with interests in
+        autonomous robotics, inspection and systems engineering.
       </p>
-      <a class="button" href="#projects">Explore my projects</a>
+      <div class="hero-links">
+        <a href="#projects" class="button primary">Explore Projects</a>
+        <a href="cv.pdf" class="button secondary" target="_blank" rel="noopener">
+          View CV
+        </a>
+      </div>
     </section>
 
-    <section id="skills">
+    <!-- About -->
+    <section id="about" class="section">
+      <p class="section-label">INTRODUCTION</p>
+      <h2>About Me</h2>
+
+      <div class="text-content">
+        <p>
+          I am a first-year CDT student in Robotics and AI for Net
+          Zero at the University of Manchester, currently undertaking
+          an MSc in Robotics following a First Class MEng in
+          Mechatronic Engineering.
+        </p>
+        <p>
+          My background includes autonomous robotic systems,
+          manipulation, embedded systems, instrumentation and
+          multidisciplinary engineering projects. Through academic
+          projects and research experience, I have developed an
+          interest in the complete lifecycle of robotic systems,
+          from initial requirements and design through to
+          integration, testing and deployment.
+        </p>
+        <p>
+          My current research direction focuses on robotic
+          inspection in confined steel and concrete structures,
+          contributing towards safer and more effective inspection
+          and maintenance in challenging environments.
+        </p>
+      </div>
+    </section>
+
+    <!-- Research interests -->
+    <section id="interests" class="section">
+      <p class="section-label">RESEARCH DIRECTION</p>
+      <h2>Research Interests & Career Objectives</h2>
+
+      <div class="interest-grid">
+        <div class="interest-card">
+          <h3>Inspection Robotics</h3>
+          <p>
+            Robotic platforms for inspection and maintenance,
+            particularly where conventional access is difficult,
+            hazardous or inefficient.
+          </p>
+        </div>
+
+        <div class="interest-card">
+          <h3>Extreme Environments</h3>
+          <p>
+            Autonomous and remotely operated systems for confined,
+            inaccessible and challenging environments, including
+            applications in the nuclear sector.
+          </p>
+        </div>
+
+        <div class="interest-card">
+          <h3>Robotic Systems Engineering</h3>
+          <p>
+            The design, integration and validation of robotic
+            platforms combining mechanical, electronic, control
+            and software subsystems.
+          </p>
+        </div>
+
+        <div class="interest-card">
+          <h3>Robotics for Net Zero</h3>
+          <p>
+            Applying robotics to improve infrastructure inspection,
+            maintenance, operational safety and the sustainability
+            of engineering systems.
+          </p>
+        </div>
+      </div>
+
+      <p class="career-note">
+        My longer-term ambition is to contribute to the research
+        and development of robotic inspection systems through
+        industrial or government-related engineering programmes,
+        with an interest in pursuing further academic research
+        and teaching later in my career.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <p class="section-label">TECHNICAL CAPABILITIES</p>
       <h2>Technical Skills</h2>
-      <p>
-        Python · C++ · MATLAB · ROS 2 · SolidWorks ·
-        Altium · Computer Vision · Control Systems
-      </p>
+
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <h3>Programming</h3>
+          <div class="tags">
+            <span>Python</span>
+            <span>C</span>
+            <span>C++</span>
+            <span>MATLAB</span>
+            <span>VHDL</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Robotics & Control</h3>
+          <div class="tags">
+            <span>ROS 2</span>
+            <span>MoveIt 2</span>
+            <span>Robot Kinematics</span>
+            <span>Motion Planning</span>
+            <span>Control Systems</span>
+            <span>Simulink</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Mechanical & Electronic Design</h3>
+          <div class="tags">
+            <span>SolidWorks</span>
+            <span>CAD</span>
+            <span>PCB Design</span>
+            <span>Altium</span>
+            <span>KiCad</span>
+            <span>Embedded Systems</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Perception & Computing</h3>
+          <div class="tags">
+            <span>Computer Vision</span>
+            <span>Image Processing</span>
+            <span>Machine Learning</span>
+            <span>Linux</span>
+            <span>Data Analysis</span>
+          </div>
+        </div>
+
+      </div>
     </section>
 
-    <section id="projects">
-      <h2>Selected Projects</h2>
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <p class="section-label">SELECTED WORK</p>
+      <h2>Engineering Projects</h2>
+      <p class="section-intro">
+        A selection of academic, research and team projects
+        demonstrating my experience in robotics, mechatronics,
+        computational modelling and experimental engineering.
+      </p>
+
       <div class="project-grid">
 
-        <article class="project">
-          <h3>SAPLiNG Robot</h3>
-          <p>Autonomous litter retrieval and mobile manipulation.</p>
+        <!-- SAPLiNG -->
+        <article class="project-card">
+          <img src="images/SAPLING.png"
+               alt="Annotated SAPLiNG autonomous litter picking system"
+               loading="lazy">
+          <div class="project-body">
+            <h3>SAPLiNG — Autonomous Litter-Picking Robot</h3>
+            <p>
+              Developed an autonomous litter retrieval system as
+              part of a multidisciplinary robotics team. Led the
+              retrieval subsystem, integrating grasp pose
+              generation, ROS 2 manipulation and MoveIt 2, while
+              also taking responsibility for system-wide power
+              management and supporting hardware integration.
+            </p>
+            <div class="tags">
+              <span>ROS 2</span>
+              <span>MoveIt 2</span>
+              <span>Python</span>
+              <span>C++</span>
+            </div>
+            <div class="project-links">
+              <!-- Replace # with the correct URLs -->
+              <a href="#">GitHub Repository</a>
+              <a href="#">Demo Video</a>
+            </div>
+          </div>
         </article>
 
-        <article class="project">
-          <h3>ESP Buggy</h3>
-          <p>Mechatronic design and system integration.</p>
+        <!-- ESP -->
+        <article class="project-card">
+          <img src="images/ESP.jpg"
+               alt="Completed embedded systems robotic buggy"
+               loading="lazy">
+          <div class="project-body">
+            <h3>ESP — Embedded Systems Buggy</h3>
+            <p>
+              Led the electromechanical design of a line-following
+              robotic buggy, including motor characterisation,
+              transmission selection and a multi-layer chassis
+              designed in SolidWorks. Supported hardware assembly,
+              electrical troubleshooting and PID controller testing.
+            </p>
+            <div class="tags">
+              <span>SolidWorks</span>
+              <span>Embedded Systems</span>
+              <span>PID Control</span>
+            </div>
+            <div class="project-links">
+              <a href="#">Project Report</a>
+              <a href="#">GitHub Repository</a>
+            </div>
+          </div>
         </article>
 
-        <article class="project">
-          <h3>Nanopore Research</h3>
-          <p>Measurement instrumentation and GUI development.</p>
+        <!-- ARIA -->
+        <article class="project-card">
+          <img src="images/ARIA.jpg"
+               alt="Comparison of MRI imagery and computational ARIA lesion model"
+               loading="lazy">
+          <div class="project-body">
+            <h3>ARIA — Medical Imaging Modelling</h3>
+            <p>
+              Undertook an individual research project investigating
+              amyloid-related imaging abnormalities. Developed
+              computational methods in MATLAB to introduce synthetic
+              oedema and haemorrhage representations into a digital
+              human brain phantom, supporting the generation of
+              medical imaging data for future AI research.
+            </p>
+            <div class="tags">
+              <span>MATLAB</span>
+              <span>Image Processing</span>
+              <span>Research</span>
+            </div>
+            <div class="project-links">
+              <a href="#">Dissertation</a>
+              <a href="#">Source Code</a>
+            </div>
+          </div>
         </article>
 
-        <article class="project">
-          <h3>ARIA Imaging</h3>
-          <p>Computational modelling and medical image processing.</p>
+        <!-- Nanopore -->
+        <article class="project-card">
+          <img src="images/Nanopore.jpg"
+               alt="Nanopore laboratory setup and MATLAB measurement interface"
+               loading="lazy">
+          <div class="project-body">
+            <h3>Nanopore Research — Measurement GUI</h3>
+            <p>
+              During a nanotechnology research internship,
+              developed a MATLAB graphical interface for
+              controlling a Keithley source measure unit during
+              nanopore fabrication experiments. Incorporated
+              voltage control, live current measurements,
+              data visualisation and safety cut-off functionality.
+            </p>
+            <div class="tags">
+              <span>MATLAB</span>
+              <span>Instrumentation</span>
+              <span>GUI Development</span>
+            </div>
+            <div class="project-links">
+              <a href="#">Technical Report</a>
+            </div>
+          </div>
         </article>
 
-        <article class="project">
-          <h3>MNIST</h3>
-          <p>Machine learning and handwritten digit recognition.</p>
+        <!-- MNIST -->
+        <article class="project-card">
+          <img src="images/MNIST.png"
+               alt="Visualisation of neural network results for handwritten digit recognition"
+               loading="lazy">
+          <div class="project-body">
+            <h3>MNIST — Handwritten Digit Recognition</h3>
+            <p>
+              Investigated machine learning techniques for
+              handwritten digit classification using the MNIST
+              dataset. Analysed model predictions and visualised
+              learned features to explore the performance and
+              behaviour of image classification methods.
+            </p>
+            <div class="tags">
+              <span>Machine Learning</span>
+              <span>Image Classification</span>
+              <span>Data Visualisation</span>
+            </div>
+            <div class="project-links">
+              <a href="#">Project Report</a>
+              <a href="#">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Sensors -->
+        <article class="project-card">
+          <img src="images/Sensors.png"
+               alt="C-Meter Pro sensor project poster"
+               loading="lazy">
+          <div class="project-body">
+            <h3>C-Meter Pro — Portable Capacitance Metre</h3>
+            <p>
+              Designed a low-cost, portable capacitance metre
+              for laboratory and field applications. Developed 
+              a system concept using a microcontroller-based 
+              charge/discharge circuit, with embedded 
+              calibration to minimise measurement errors 
+              caused by stray capacitance. The proposed 
+              device targeted a measurement resolution of 1 pF, 
+              accuracy of ±1%, and production cost below £75.
+              
+            </p>
+            <div class="tags">
+              <span>Sensors</span>
+              <span>Engineering Design</span>
+            </div>
+            <div class="project-links">
+              <a href="#">Project Poster</a>
+            </div>
+          </div>
         </article>
 
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Connect</h2>
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+      <p class="section-label">GET IN TOUCH</p>
+      <h2>Contact & Professional Links</h2>
       <p>
-        <a href="https://github.com/YOUR_USERNAME">GitHub</a> ·
-        <a href="https://www.linkedin.com/">LinkedIn</a> ·
-        <a href="cv.pdf">CV</a>
+        Interested in robotics research, engineering collaboration
+        or professional opportunities? You can find more about
+        my work through the links below.
       </p>
+
+      <div class="contact-links">
+        <a href="https://github.com/momani962"
+           target="_blank" rel="noopener">GitHub</a>
+
+        <a href="www.linkedin.com/in/qais-momani-097445297"
+           target="_blank" rel="noopener">LinkedIn</a>
+
+        <a href="cv.pdf"
+           target="_blank" rel="noopener">Download CV</a>
+      </div>
     </section>
+
   </main>
 
   <footer>
-    <p>Personal robotics and engineering portfolio</p>
+    <p>© 2026 Qais Momani · Robotics & Mechatronics Engineering</p>
   </footer>
+
 </body>
 </html>
