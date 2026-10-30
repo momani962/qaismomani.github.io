@@ -105,7 +105,7 @@ h3 {
   color: var(--accent);
 }
 
-/* MAIN */
+/* MAIN CONTENT */
 
 main {
   max-width: 1120px;
@@ -215,7 +215,7 @@ main {
   border: 1px solid var(--border);
 }
 
-/* INTERESTS */
+/* RESEARCH INTERESTS */
 
 .interests-content {
   max-width: 900px;
@@ -289,7 +289,6 @@ main {
   margin-bottom: 32px;
 }
 
-/* One project per row */
 .project-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -354,7 +353,7 @@ main {
   color: var(--accent);
 }
 
-/* PROJECT TEXT */
+/* PROJECT DESCRIPTIONS */
 
 .project-body {
   min-width: 0;
@@ -380,7 +379,30 @@ main {
   color: var(--text);
 }
 
-/* IMAGE LIGHTBOX */
+/* PROJECT REPORT / REPOSITORY / DEMO LINKS */
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.project-links a {
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.project-links a:hover {
+  color: #9bf0d5;
+  text-decoration: underline;
+}
+
+/* FULL-SIZE IMAGE LIGHTBOX */
 
 .lightbox[hidden] {
   display: none;
@@ -426,6 +448,64 @@ main {
 
 .lightbox-close:hover {
   color: var(--accent);
+}
+
+/* VIDEO SECTION */
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+.video-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+/* Responsive 16:9 video player */
+
+.video-player {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000000;
+}
+
+.video-player iframe {
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-body {
+  padding: 22px;
+}
+
+.video-body h3 {
+  color: var(--text);
+  margin: 0 0 12px;
+}
+
+.video-body p {
+  font-size: 14px;
+  line-height: 1.65;
+  margin: 0;
 }
 
 /* CONTACT */
@@ -552,6 +632,14 @@ footer {
     font-size: 18px;
   }
 
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .video-body {
+    padding: 18px;
+  }
+
   .contact-links {
     flex-direction: column;
     align-items: center;
@@ -575,11 +663,13 @@ footer {
 /* ACCESSIBILITY */
 
 @media (prefers-reduced-motion: reduce) {
+
   html {
     scroll-behavior: auto;
   }
 
   .project-card,
+  .video-card,
   .project-image-link img,
   .button {
     transition: none;
